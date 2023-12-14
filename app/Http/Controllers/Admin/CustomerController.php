@@ -13,7 +13,7 @@ class CustomerController extends Controller
 {
     public function index()
     {
-        $data["title"] = "Customer";
+        $data["title"] = "Penanggung Jawab";
         $data["hakTambah"] = AksesModel::leftJoin('tbl_menu', 'tbl_menu.menu_id', '=', 'tbl_akses.menu_id')->where(array('tbl_akses.role_id' => Session::get('user')->role_id, 'tbl_menu.menu_judul' => 'Customer', 'tbl_akses.akses_type' => 'create'))->count();
         return view('Admin.Customer.index', $data);
     }
