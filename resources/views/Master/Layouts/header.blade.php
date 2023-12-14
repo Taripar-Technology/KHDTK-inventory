@@ -52,7 +52,7 @@
                                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                                     <div class="drop-heading border-bottom">
                                         <div class="d-flex">
-                                            <h6 class="mt-1 mb-0 fs-16 fw-semibold text-dark">Notifications
+                                            <h6 class="mt-1 mb-0 fs-16 fw-semibold text-dark">Notifikasi
                                             </h6>
                                         </div>
                                     </div>

@@ -7,12 +7,12 @@ Aplikasi ini bisa anda gunakan untuk mengontrol stock barang yang anda miliki se
 Untuk tampilannya saya sudah pasang template admin `bootstrap v5` yaitu `sash admin`.
 
 ## *:sparkles: Fitur*
-* **Dashboard**
+* **Beranda**
 * **Jenis Barang**
 * **Satuan Barang**
 * **Merk Barang**
 * **Barang**
-* **Customer**
+* **Penanggung Jawab**
 * **Barang Masuk**
 * **Barang Keluar**
 * **Laporan Barang Masuk**

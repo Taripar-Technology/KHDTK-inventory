@@ -3,11 +3,11 @@
 @section('content')
 <!-- PAGE-HEADER -->
 <div class="page-header">
-    <h1 class="page-title">Dashboard</h1>
+    <h1 class="page-title">Beranda</h1>
     <div>
         <ol class="breadcrumb">
             <li class="breadcrumb-item text-gray">Admin</li>
-            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+            <li class="breadcrumb-item active" aria-current="page">Beranda</li>
         </ol>
     </div>
 </div>
@@ -49,7 +49,7 @@
                 <div class="d-flex">
                     <div class="text-white">
                         <h2 class="mb-0 number-font">{{$merk}}</h2>
-                        <p class="text-white mb-0">Merk Barang</p>
+                        <p class="text-white mb-0">Merek Barang</p>
                     </div>
                     <div class="ms-auto"> <i class="fe fe-package text-white fs-40 me-2 mt-2"></i> </div>
                 </div>
@@ -105,7 +105,7 @@
                 <div class="d-flex">
                     <div class="text-white">
                         <h2 class="mb-0 number-font">{{$customer}}</h2>
-                        <p class="text-white mb-0">Customer</p>
+                        <p class="text-white mb-0">Penanggung Jawab</p>
                     </div>
                     <div class="ms-auto"> <i class="fe fe-user text-white fs-40 me-2 mt-2"></i> </div>
                 </div>
@@ -119,7 +119,7 @@
                 <div class="d-flex">
                     <div class="text-white">
                         <h2 class="mb-0 number-font">{{$user}}</h2>
-                        <p class="text-white mb-0">User</p>
+                        <p class="text-white mb-0">Pengguna</p>
                     </div>
                     <div class="ms-auto"> <i class="fe fe-user text-white fs-40 me-2 mt-2"></i> </div>
                 </div>

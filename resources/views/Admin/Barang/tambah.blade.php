@@ -35,7 +35,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="merk" class="form-label">Merk Barang</label>
+                            <label for="merk" class="form-label">Merek Barang</label>
                             <select name="merk" class="form-control">
                                 <option value="">-- Pilih --</option>
                                 @foreach ($merk as $m)
@@ -50,7 +50,7 @@
                     </div>
                     <div class="col-md-5">
                         <div class="form-group">
-                            <label for="title" class="form-label">Foto</label>
+                            <label for="title" class="form-label">Gambar</label>
                             <center>
                                 <img src="{{url('/assets/default/barang/image.png')}}" width="80%" alt="profile-user" id="outputImg" class="">
                             </center>
@@ -105,10 +105,10 @@
         const satuan = $("select[name='satuan']").val();
         const merk = $("select[name='merk']").val();
         const harga = $("input[name='harga']").val();
-        const foto = $('#GetFile')[0].files;
+        const gambar = $('#GetFile')[0].files;
         var fd = new FormData();
         // Append data 
-        fd.append('foto', foto[0]);
+        fd.append('gambar', gambar[0]);
         fd.append('kode', kode);
         fd.append('nama', nama);
         fd.append('jenisbarang', jenisbarang);

@@ -10,7 +10,7 @@ use App\Models\Admin\SubmenuModel; ?>
     <h1 class="page-title">Akses</h1>
     <div>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item text-gray">Settings</li>
+            <li class="breadcrumb-item text-gray">Pengaturan</li>
             <li class="breadcrumb-item active" aria-current="page">Akses</li>
         </ol>
     </div>
@@ -65,10 +65,10 @@ use App\Models\Admin\SubmenuModel; ?>
                         <thead>
                             <tr>
                                 <th>Menu</th>
-                                <th width="1%">View</th>
+                                <th width="1%">Lihat</th>
                                 <th width="1%">Create</th>
-                                <th width="1%">Update</th>
-                                <th width="1%">Delete</th>
+                                <th width="1%">Perbaharui</th>
+                                <th width="1%">Hapus</th>
                             </tr>
                         </thead>
                         <tbody>

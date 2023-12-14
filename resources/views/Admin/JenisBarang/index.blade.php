@@ -35,7 +35,7 @@
                                 <th class="border-bottom-0" width="1%">No</th>
                                 <th class="border-bottom-0">Jenis Barang</th>
                                 <th class="border-bottom-0">Keterangan</th>
-                                <th class="border-bottom-0" width="1%">Action</th>
+                                <th class="border-bottom-0" width="1%">Aksi</th>
                             </thead>
                             <tbody></tbody>
                         </table>

@@ -20,10 +20,10 @@ class MenuTableSeeder extends Seeder
             [
                 [
                     'menu_id' => '1667444041',
-                    'menu_judul' => 'Dashboard',
-                    'menu_slug' => 'dashboard',
+                    'menu_judul' => 'Beranda',
+                    'menu_slug' => 'beranda',
                     'menu_icon' => 'home',
-                    'menu_redirect' => '/dashboard',
+                    'menu_redirect' => '/beranda',
                     'menu_sort' => 1,
                     'menu_type' => 1,
                     'created_at' => Carbon::now()->format('Y-m-d H:i:s'),

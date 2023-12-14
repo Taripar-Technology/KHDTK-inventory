@@ -36,7 +36,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="merkU" class="form-label">Merk Barang</label>
+                            <label for="merkU" class="form-label">Merek Barang</label>
                             <select name="merkU" class="form-control">
                                 <option value="">-- Pilih --</option>
                                 @foreach ($merk as $m)

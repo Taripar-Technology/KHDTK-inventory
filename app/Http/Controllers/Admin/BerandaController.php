@@ -14,11 +14,11 @@ use App\Models\Admin\SatuanModel;
 use App\Models\Admin\UserModel;
 use Illuminate\Http\Request;
 
-class DashboardController extends Controller
+class BerandaController extends Controller
 {
     public function index()
     {
-        $data["title"] = "Dashboard";
+        $data["title"] = "Beranda";
         $data["jenis"] = JenisBarangModel::orderBy('jenisbarang_id', 'DESC')->count();
         $data["satuan"] = SatuanModel::orderBy('satuan_id', 'DESC')->count();
         $data["merk"] = MerkModel::orderBy('merk_id', 'DESC')->count();
@@ -27,6 +27,6 @@ class DashboardController extends Controller
         $data["bm"] = BarangmasukModel::leftJoin('tbl_barang', 'tbl_barang.barang_kode', '=', 'tbl_barangmasuk.barang_kode')->leftJoin('tbl_customer', 'tbl_customer.customer_id', '=', 'tbl_barangmasuk.customer_id')->orderBy('bm_id', 'DESC')->count();
         $data["bk"] = BarangkeluarModel::leftJoin('tbl_barang', 'tbl_barang.barang_kode', '=', 'tbl_barangkeluar.barang_kode')->orderBy('bk_id', 'DESC')->count();
         $data["user"] = UserModel::leftJoin('tbl_role', 'tbl_role.role_id', '=', 'tbl_user.role_id')->select()->orderBy('user_id', 'DESC')->count();
-        return view('Admin.Dashboard.index', $data);
+        return view('Admin.Beranda.index', $data);
     }
 }

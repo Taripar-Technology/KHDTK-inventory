@@ -3,7 +3,7 @@
 
 <?php
 
-use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\BerandaController;
 use App\Models\Admin\WebModel;
 use Illuminate\Support\Facades\Session;
 
