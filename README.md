@@ -10,7 +10,7 @@ Untuk tampilannya saya sudah pasang template admin `bootstrap v5` yaitu `sash ad
 * **Beranda**
 * **Jenis Barang**
 * **Satuan Barang**
-* **Merk Barang**
+* **Gudang Barang**
 * **Barang**
 * **Penanggung Jawab**
 * **Barang Masuk**

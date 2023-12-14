@@ -35,10 +35,10 @@
                             <th class="border-bottom-0">Tanggal Masuk</th>
                             <th class="border-bottom-0">Kode Barang Masuk</th>
                             <th class="border-bottom-0">Kode Barang</th>
-                            <th class="border-bottom-0">Customer</th>
+                            <th class="border-bottom-0">Penanggung Jawab</th>
                             <th class="border-bottom-0">Barang</th>
                             <th class="border-bottom-0">Jumlah Masuk</th>
-                            <th class="border-bottom-0" width="1%">Action</th>
+                            <th class="border-bottom-0" width="1%">Aksi</th>
                         </thead>
                         <tbody></tbody>
                     </table>

@@ -34,7 +34,7 @@
                             <th class="border-bottom-0">Username</th>
                             <th class="border-bottom-0">Email</th>
                             <th class="border-bottom-0">Role</th>
-                            <th class="border-bottom-0" width="1%">Action</th>
+                            <th class="border-bottom-0" width="1%">Aksi</th>
                         </thead>
                         <tbody></tbody>
                     </table>

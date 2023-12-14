@@ -40,7 +40,7 @@
         resetValidU();
 
         if (customer == "") {
-            validasi('Nama Customer wajib di isi!', 'warning');
+            validasi('Nama Penanggung Jawab wajib di isi!', 'warning');
             $("input[name='customerU']").addClass('is-invalid');
             setLoadingU(false);
             return false;

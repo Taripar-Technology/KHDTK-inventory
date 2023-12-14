@@ -18,9 +18,9 @@
                             <input type="text" name="tglmasukU" class="form-control datepicker-date" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="customerU" class="form-label">Pilih Customer <span class="text-danger">*</span></label>
+                            <label for="customerU" class="form-label">Pilih Penanggung Jawab <span class="text-danger">*</span></label>
                             <select name="customerU" id="customerU" class="form-control">
-                                <option value="">-- Pilih Customer --</option>
+                                <option value="">-- Pilih Penanggung Jawab --</option>
                                 @foreach ($customer as $c)
                                 <option value="{{ $c->customer_id }}">{{ $c->customer_nama }}</option>
                                 @endforeach
@@ -142,7 +142,7 @@
             setLoading(Ufalse);
             return false;
         } else if (customer == "") {
-            validasi('Customer wajib di pilih!', 'warning');
+            validasi('Penanggung Jawab wajib di pilih!', 'warning');
             $("select[name='customerU']").addClass('is-invalid');
             setLoadingU(false);
             return false;

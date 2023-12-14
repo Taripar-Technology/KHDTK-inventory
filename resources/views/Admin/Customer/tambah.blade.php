@@ -8,7 +8,7 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="customer" class="form-label">Nama Penanggung Jawab <span class="text-danger">*</span></label>
+                    <label for="customer" class="form-label">Nama Penanggung Jawab<span class="text-danger">*</span></label>
                     <input type="text" name="customer" class="form-control" placeholder="">
                 </div>
                 <div class="form-group">
@@ -43,7 +43,7 @@
             resetValid();
 
             if (customer == "") {
-                validasi('Nama Customer wajib di isi!', 'warning');
+                validasi('Nama Penanggung Jawab wajib di isi!', 'warning');
                 $("input[name='customer']").addClass('is-invalid');
                 setLoading(false);
                 return false;
