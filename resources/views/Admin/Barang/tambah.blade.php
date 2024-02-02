@@ -35,11 +35,11 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="merk" class="form-label">Merek Barang</label>
-                            <select name="merk" class="form-control">
+                            <label for="gudang" class="form-label">Gudang Barang</label>
+                            <select name="gudang" class="form-control">
                                 <option value="">-- Pilih --</option>
-                                @foreach ($merk as $m)
-                                <option value="{{$m->merk_id}}">{{$m->merk_nama}}</option>
+                                @foreach ($gudang as $m)
+                                <option value="{{$m->gudang_id}}">{{$m->gudang_nama}}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -50,7 +50,7 @@
                     </div>
                     <div class="col-md-5">
                         <div class="form-group">
-                            <label for="title" class="form-label">Gambar</label>
+                            <label for="title" class="form-label">Foto</label>
                             <center>
                                 <img src="{{url('/assets/default/barang/image.png')}}" width="80%" alt="profile-user" id="outputImg" class="">
                             </center>
@@ -103,17 +103,17 @@
         const nama = $("input[name='nama']").val();
         const jenisbarang = $("select[name='jenisbarang']").val();
         const satuan = $("select[name='satuan']").val();
-        const merk = $("select[name='merk']").val();
+        const gudang = $("select[name='gudang']").val();
         const harga = $("input[name='harga']").val();
-        const gambar = $('#GetFile')[0].files;
+        const foto = $('#GetFile')[0].files;
         var fd = new FormData();
         // Append data 
-        fd.append('gambar', gambar[0]);
+        fd.append('foto', foto[0]);
         fd.append('kode', kode);
         fd.append('nama', nama);
         fd.append('jenisbarang', jenisbarang);
         fd.append('satuan', satuan);
-        fd.append('merk', merk);
+        fd.append('gudang', gudang);
         fd.append('harga', harga);
         $.ajax({
             type: 'POST',
@@ -138,7 +138,7 @@
         $("input[name='nama']").removeClass('is-invalid');
         $("select[name='jenisbarang']").removeClass('is-invalid');
         $("select[name='satuan']").removeClass('is-invalid');
-        $("select[name='merk']").removeClass('is-invalid');
+        $("select[name='gudang']").removeClass('is-invalid');
         $("input[name='harga']").removeClass('is-invalid');
     };
     function reset() {
@@ -147,7 +147,7 @@
         $("input[name='nama']").val('');
         $("select[name='jenisbarang']").val('');
         $("select[name='satuan']").val('');
-        $("select[name='merk']").val('');
+        $("select[name='gudang']").val('');
         $("input[name='harga']").val('');
         $("#outputImg").attr("src", "{{url('/assets/default/barang/image.png')}}");
         $("#GetFile").val('');

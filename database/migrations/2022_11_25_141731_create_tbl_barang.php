@@ -17,7 +17,7 @@ return new class extends Migration
             $table->increments('barang_id');
             $table->string('jenisbarang_id')->nullable();
             $table->string('satuan_id')->nullable();
-            $table->string('merk_id')->nullable();
+            $table->string('gudang_id')->nullable();
             $table->string('barang_kode');
             $table->string('barang_nama');
             $table->string('barang_slug');

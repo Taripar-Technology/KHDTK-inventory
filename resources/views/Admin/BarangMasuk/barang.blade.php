@@ -17,7 +17,7 @@
                             <th class="border-bottom-0">Nama Barang</th>
                             <th class="border-bottom-0">Jenis</th>
                             <th class="border-bottom-0">Satuan</th>
-                            <th class="border-bottom-0">Merk</th>
+                            <th class="border-bottom-0">Gudang</th>
                             <th class="border-bottom-0">Stok</th>
                             <th class="border-bottom-0">Harga</th>
                             <th class="border-bottom-0" width="1%">Action</th>
@@ -122,8 +122,8 @@
                     name: 'satuan_nama',
                 },
                 {
-                    data: 'merk',
-                    name: 'merk_nama'
+                    data: 'gudang',
+                    name: 'gudang_nama'
                 },
                 {
                     data: 'totalstok',

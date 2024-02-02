@@ -2355,7 +2355,7 @@ nv.models.boxPlotChart = function() {
         staggerLabels = false,
         tooltip = nv.models.tooltip(),
         x, y,
-        noData = 'No Data Available.',
+        noData = '.',
         dispatch = d3.dispatch('beforeUpdate', 'renderEnd'),
         duration = 250;
 

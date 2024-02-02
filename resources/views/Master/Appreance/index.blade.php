@@ -8,7 +8,7 @@
     <h1 class="page-title">Tampilan/Tema</h1>
     <div>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item text-gray">Pengaturan</li>
+            <li class="breadcrumb-item text-gray">Settings</li>
             <li class="breadcrumb-item active" aria-current="page">Tampilan/Tema</li>
         </ol>
     </div>
@@ -19,7 +19,7 @@
     <div class="col-md-6">
         <div class="card mb-5">
             <div class="card-header justify-content-between">
-                <h3 class="card-title">Tata Letak Menu</h3>
+                <h3 class="card-title">Layout Menu</h3>
             </div>
             <form action="{{url('admin/appreance/layout')}}" method="POST">
                 @csrf
@@ -35,7 +35,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-layout fs-40 d-block my-4"></i>
-                                        Tata Letak Vertikal
+                                        Vertical Layout
                                     </div>
                                 </span>
                             </label>
@@ -48,7 +48,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-layout fs-40 d-block my-4"></i>
-                                        Tata Letak Horizontal
+                                        Horizontal Layout
                                     </div>
                                 </span>
                             </label>
@@ -80,7 +80,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-sun fs-40 d-block my-4"></i>
-                                        Mode Terang
+                                        Light Mode
                                     </div>
                                 </span>
                             </label>
@@ -93,7 +93,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-moon fs-40 d-block my-4"></i>
-                                        Mode Gelap
+                                        Dark Mode
                                     </div>
                                 </span>
                             </label>
@@ -125,7 +125,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Menu Terang
+                                        Light Menu
                                     </div>
                                 </span>
                             </label>
@@ -138,7 +138,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Warna Menu
+                                        Color Menu
                                     </div>
                                 </span>
                             </label>
@@ -151,7 +151,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Menu Gelap
+                                        Dark Menu
                                     </div>
                                 </span>
                             </label>
@@ -164,7 +164,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Menu Gradien
+                                        Gradient Menu
                                     </div>
                                 </span>
                             </label>
@@ -196,7 +196,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Header Terang
+                                        Light Header
                                     </div>
                                 </span>
                             </label>
@@ -222,7 +222,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Header Gelap
+                                        Dark Header
                                     </div>
                                 </span>
                             </label>
@@ -235,7 +235,7 @@
                                 <span class="selectgroup-button">
                                     <div>
                                         <i class="fe fe-circle fs-40 d-block my-4"></i>
-                                        Header Gradien
+                                        Gradient Header
                                     </div>
                                 </span>
                             </label>

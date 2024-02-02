@@ -1,7 +1,6 @@
-
 ![Inventoryweb-thumnail](https://user-images.githubusercontent.com/47371845/205918923-dcc3b42f-4d67-46af-9bd1-d6b577b868cb.jpg)
 
-## *:information_source: Inventoryweb*
+## *:information_source: KHDTK_Inventory*
 Aplikasi ini bisa anda gunakan untuk mengontrol stock barang yang anda miliki sehingga jelas transaksi keluar dan masuk barang tersebut juga mempermudah kontrol barang tersebut.
 <br><br>
 Untuk tampilannya saya sudah pasang template admin `bootstrap v5` yaitu `sash admin`.
@@ -12,7 +11,7 @@ Untuk tampilannya saya sudah pasang template admin `bootstrap v5` yaitu `sash ad
 * **Satuan Barang**
 * **Gudang Barang**
 * **Barang**
-* **Penanggung Jawab**
+* **Pengecek**
 * **Barang Masuk**
 * **Barang Keluar**
 * **Laporan Barang Masuk**
@@ -40,7 +39,7 @@ Untuk tampilannya saya sudah pasang template admin `bootstrap v5` yaitu `sash ad
 #### :arrow_right: Clone Project / Download File
 Clone Project dengan perintah terminal `gitbash` sebagai berikut:
 ```
-git clone https://github.com/Taripar-Technology/KHDTK-inventory.git
+git clone https://github.com/HedrinSitorus20/KHDTK-Inventory.git
 ```
 Atau bisa klik tombol download Zip dan extrak file tersebut
 #### :arrow_right: Buat Database
@@ -67,14 +66,6 @@ php artisan serve
 ```
 copy & paste `http://127.0.0.1:8000/` ke browser anda.
 
-#### :arrow_right: Login Default
-username: `superadmin` password: `12345678`
-<br>
-username: `admin` password: `12345678`
-<br>
-username: `operator` password: `12345678`
-<br>
-username: `manajer` password: `12345678`
 
 ## *:desktop_computer: Preview*
 ![ad3c121d-1c33-4b7f-aa0f-5bb2ddce7cf6](https://user-images.githubusercontent.com/47371845/202890250-2c1e64c6-cc01-453f-b490-43eecab1e153.png)
@@ -105,5 +96,5 @@ username: `manajer` password: `12345678`
 ![dcda1efd-7060-42cb-845e-d6b1c5dd85b7](https://user-images.githubusercontent.com/47371845/204021259-67c28a2c-141f-4632-9c7f-0be855aa1b46.png)
 ![d50d104b-6d77-499a-be5b-eb80ad6f6c35](https://user-images.githubusercontent.com/47371845/204021276-fd3219b8-37fb-42a6-852a-6e20e3206b48.png)
 
-# KHDTK-inventory
 
+# KHDTK-inventory

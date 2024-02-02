@@ -35,10 +35,10 @@
                             <th class="border-bottom-0">Nama Barang</th>
                             <th class="border-bottom-0">Jenis</th>
                             <th class="border-bottom-0">Satuan</th>
-                            <th class="border-bottom-0">Merek</th>
+                            <th class="border-bottom-0">Gudang</th>
                             <th class="border-bottom-0">Stok</th>
                             <th class="border-bottom-0">Harga</th>
-                            <th class="border-bottom-0" width="1%">Aksi</th>
+                            <th class="border-bottom-0" width="1%">Action</th>
                         </thead>
                         <tbody></tbody>
                     </table>
@@ -49,8 +49,8 @@
 </div>
 <!-- END ROW -->
 
-@include('Admin.Barang.tambah', ['jenisbarang' => $jenisbarang, 'satuan' => $satuan, 'merk' => $merk])
-@include('Admin.Barang.edit', ['jenisbarang' => $jenisbarang, 'satuan' => $satuan, 'merk' => $merk])
+@include('Admin.Barang.tambah', ['jenisbarang' => $jenisbarang, 'satuan' => $satuan, 'gudang' => $gudang])
+@include('Admin.Barang.edit', ['jenisbarang' => $jenisbarang, 'satuan' => $satuan, 'gudang' => $gudang])
 @include('Admin.Barang.hapus')
 @include('Admin.Barang.gambar')
 
@@ -65,7 +65,7 @@
         $("input[name='namaU']").val(data.barang_nama.replace(/_/g, ' '));
         $("select[name='jenisbarangU']").val(data.jenisbarang_id);
         $("select[name='satuanU']").val(data.satuan_id);
-        $("select[name='merkU']").val(data.merk_id);
+        $("select[name='gudangU']").val(data.gudang_id);
         $("input[name='stokU']").val(data.barang_stok);
         $("input[name='hargaU']").val(data.barang_harga.replace(/_/g, ' '));
         if(data.barang_gambar != 'image.png'){
@@ -147,8 +147,8 @@
                     name: 'satuan_nama',
                 },
                 {
-                    data: 'merk',
-                    name: 'merk_nama',
+                    data: 'gudang',
+                    name: 'gudang_nama',
                 },
                 {
                     data: 'totalstok',

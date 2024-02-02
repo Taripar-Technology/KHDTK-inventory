@@ -2564,11 +2564,11 @@ body.dark-mode *:hover::-webkit-scrollbar-thumb {
     border-color: rgba(255, 255, 255, 0.1);
 }
 
-.dark-mode .customer-services {
+.dark-mode .pengecek-services {
     border-color: rgba(255, 255, 255, 0.1);
 }
 
-.dark-mode .customer-services span {
+.dark-mode .pengecek-services span {
     background-color: #2a2a4a;
     color: var(--primary-bg-color);
 }

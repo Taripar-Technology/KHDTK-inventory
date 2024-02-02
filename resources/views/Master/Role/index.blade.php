@@ -6,7 +6,7 @@
     <h1 class="page-title">Role</h1>
     <div>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item text-gray">Pengaturan</li>
+            <li class="breadcrumb-item text-gray">Settings</li>
             <li class="breadcrumb-item text-gray">User</li>
             <li class="breadcrumb-item active" aria-current="page">Role</li>
         </ol>

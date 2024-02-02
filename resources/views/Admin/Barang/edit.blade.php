@@ -36,11 +36,11 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="merkU" class="form-label">Merek Barang</label>
-                            <select name="merkU" class="form-control">
+                            <label for="gudangU" class="form-label">Gudang Barang</label>
+                            <select name="gudangU" class="form-control">
                                 <option value="">-- Pilih --</option>
-                                @foreach ($merk as $m)
-                                <option value="{{$m->merk_id}}">{{$m->merk_nama}}</option>
+                                @foreach ($gudang as $m)
+                                <option value="{{$m->gudang_id}}">{{$m->gudang_nama}}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -115,7 +115,7 @@
         const nama = $("input[name='namaU']").val();
         const jenisbarang = $("select[name='jenisbarangU']").val();
         const satuan = $("select[name='satuanU']").val();
-        const merk = $("select[name='merkU']").val();
+        const gudang = $("select[name='gudangU']").val();
         const harga = $("input[name='hargaU']").val();
         const stok = $("input[name='stokU']").val();
         const foto = $('#GetFileU')[0].files;
@@ -128,7 +128,7 @@
         fd.append('nama', nama);
         fd.append('jenisbarang', jenisbarang);
         fd.append('satuan', satuan);
-        fd.append('merk', merk);
+        fd.append('gudang', gudang);
         fd.append('harga', harga);
         fd.append('stok', stok);
         $.ajax({
@@ -154,7 +154,7 @@
         $("input[name='namaU']").removeClass('is-invalid');
         $("select[name='jenisbarangU']").removeClass('is-invalid');
         $("select[name='satuanU']").removeClass('is-invalid');
-        $("select[name='merkU']").removeClass('is-invalid');
+        $("select[name='gudangU']").removeClass('is-invalid');
         $("input[name='hargaU']").removeClass('is-invalid');
         $("input[name='stokU']").removeClass('is-invalid');
     };
@@ -165,7 +165,7 @@
         $("input[name='namaU']").val('');
         $("select[name='jenisbarangU']").val('');
         $("select[name='satuanU']").val('');
-        $("select[name='merkU']").val('');
+        $("select[name='gudangU']").val('');
         $("input[name='hargaU']").val('');
         $("input[name='stokU']").val('');
         $("#outputImgU").attr("src", "{{url('/assets/default/barang/image.png')}}");

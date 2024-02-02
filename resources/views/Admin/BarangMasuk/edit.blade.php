@@ -18,11 +18,11 @@
                             <input type="text" name="tglmasukU" class="form-control datepicker-date" placeholder="">
                         </div>
                         <div class="form-group">
-                            <label for="customerU" class="form-label">Pilih Penanggung Jawab <span class="text-danger">*</span></label>
-                            <select name="customerU" id="customerU" class="form-control">
-                                <option value="">-- Pilih Penanggung Jawab --</option>
-                                @foreach ($customer as $c)
-                                <option value="{{ $c->customer_id }}">{{ $c->customer_nama }}</option>
+                            <label for="pengecekU" class="form-label">Pilih Pengecek <span class="text-danger">*</span></label>
+                            <select name="pengecekU" id="pengecekU" class="form-control">
+                                <option value="">-- Pilih Pengecek --</option>
+                                @foreach ($pengecek as $c)
+                                <option value="{{ $c->pengecek_id }}">{{ $c->pengecek_nama }}</option>
                                 @endforeach
                             </select>
                         </div>
@@ -131,7 +131,7 @@
         const tglmasuk = $("input[name='tglmasukU']").val();
         const status = $("#statusU").val();
         const kdbarang = $("input[name='kdbarangU").val();
-        const customer = $("select[name='customerU']").val();
+        const pengecek = $("select[name='pengecekU']").val();
         const jml = $("input[name='jmlU']").val();
         setLoadingU(true);
         resetValidU();
@@ -141,9 +141,9 @@
             $("input[name='tglmasukU']").addClass('is-invalid');
             setLoading(Ufalse);
             return false;
-        } else if (customer == "") {
-            validasi('Penanggung Jawab wajib di pilih!', 'warning');
-            $("select[name='customerU']").addClass('is-invalid');
+        } else if (pengecek == "") {
+            validasi('Pengecek wajib di pilih!', 'warning');
+            $("select[name='pengecekU']").addClass('is-invalid');
             setLoadingU(false);
             return false;
         } else if (status == "false" || kdbarang == '') {
@@ -166,7 +166,7 @@
         const bmkode = $("input[name='bmkodeU']").val();
         const tglmasuk = $("input[name='tglmasukU']").val();
         const kdbarang = $("input[name='kdbarangU']").val();
-        const customer = $("select[name='customerU']").val();
+        const pengecek = $("select[name='pengecekU']").val();
         const jml = $("input[name='jmlU']").val();
 
         $.ajax({
@@ -177,7 +177,7 @@
                 bmkode: bmkode,
                 tglmasuk: tglmasuk,
                 barang: kdbarang,
-                customer: customer,
+                pengecek: pengecek,
                 jml: jml
             },
             success: function(data) {
@@ -195,7 +195,7 @@
     function resetValidU() {
         $("input[name='tglmasukU']").removeClass('is-invalid');
         $("input[name='kdbarangU']").removeClass('is-invalid');
-        $("select[name='customerU']").removeClass('is-invalid');
+        $("select[name='pengecekU']").removeClass('is-invalid');
         $("input[name='jmlU']").removeClass('is-invalid');
     };
 
@@ -205,7 +205,7 @@
         $("input[name='bmkodeU']").val('');
         $("input[name='tglmasukU']").val('');
         $("input[name='kdbarangU']").val('');
-        $("select[name='customerU']").val('');
+        $("select[name='pengecekU']").val('');
         $("input[name='jmlU']").val('0');
         $("#nmbarangU").val('');
         $("#satuanU").val('');

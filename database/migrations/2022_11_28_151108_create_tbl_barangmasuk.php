@@ -17,7 +17,7 @@ return new class extends Migration
             $table->increments('bm_id');
             $table->string('bm_kode');
             $table->string('barang_kode');
-            $table->string('customer_id');
+            $table->string('pengecek_id');
             $table->string('bm_tanggal');
             $table->string('bm_jumlah');
             $table->timestamps();

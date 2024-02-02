@@ -2802,12 +2802,12 @@ ul.inbox-pagination li {
     border: 0;
 }
 
-.customer-services .icon-content {
+.pengecek-services .icon-content {
     display: flex;
     align-items: center;
 }
 
-.customer-services span {
+.pengecek-services span {
     background-color: #fff;
     color: $primary-1;
     font-size: 32px;
@@ -2816,14 +2816,14 @@ ul.inbox-pagination li {
     align-items: center;
 }
 
-.customer-services span svg {
+.pengecek-services span svg {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100%;
 }
 
-.customer-services h4 {
+.pengecek-services h4 {
     font-size: 16px;
     margin-left: 27px;
     font-weight: 600;
@@ -2832,7 +2832,7 @@ ul.inbox-pagination li {
     margin-bottom: 0;
 }
 
-.customer-services {
+.pengecek-services {
     padding: 21px;
     border: 1px solid $border;
 }

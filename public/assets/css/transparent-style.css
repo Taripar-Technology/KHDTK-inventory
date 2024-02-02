@@ -2624,11 +2624,11 @@ body.transparent-mode *:hover::-webkit-scrollbar-thumb {
     border-color: rgba(255, 255, 255, 0.2);
 }
 
-.transparent-mode .customer-services {
+.transparent-mode .pengecek-services {
     border-color: rgba(255, 255, 255, 0.2);
 }
 
-.transparent-mode .customer-services span {
+.transparent-mode .pengecek-services span {
     background-color: transparent;
     color: var(--primary-bg-color);
 }
